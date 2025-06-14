@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULIR (MPLS) Masa Pengenalan Lingkungan Sekolah MTs Darutholibin</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-image: url('https://j.top4top.io/p_3452l5f2l1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(3px);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+            font-size: 1.8em;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header img {
+            max-width: 150px;
+            margin-bottom: 15px;
+        }
+        .school-name {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.2em;
+            margin-top: 5px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: all 0.3s;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        input:focus, textarea:focus {
+            border-color: #3498db;
+            outline: none;
+            box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+            background-color: white;
+        }
+        button {
+            background-color: #25D366;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            font-weight: bold;
+            transition: all 0.3s;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        button:hover {
+            background-color: #128C7E;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(18, 140, 126, 0.4);
+        }
+        .required:after {
+            content: " *";
+            color: red;
+        }
+        .form-section {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed #ccc;
+        }
+        .form-section h2 {
+            color: #3498db;
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border-left: 4px solid #3498db;
+        }
+        .whatsapp-icon {
+            font-size: 20px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                margin: 15px;
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.4em;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>(MPLS) MASA PENGENALAN LINGKUNGAN SEKOLAH</h1>
+            <div class="school-name">MTs DARUTHOLIBIN</div>
+            <p>Tahun Ajaran 2025/2026</p>
+        </div>
+
+        <form id="mplsForm">
+            <div class="form-section">
+                <h2>DATA PRIBADI PESERTA</h2>
+                
+                <div class="form-group">
+                    <label for="nama" class="required">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" placeholder="Isi dengan nama lengkap sesuai akte kelahiran" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="ttl" class="required">Tempat & Tanggal Lahir</label>
+                    <input type="text" id="ttl" name="ttl" placeholder="Contoh: Jakarta, 15 Agustus 2008" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="asal_sekolah" class="required">Asal Sekolah</label>
+                    <input type="text" id="asal_sekolah" name="asal_sekolah" placeholder="Nama sekolah sebelumnya (SD/SMP)" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="alamat" class="required">Alamat Rumah</label>
+                    <textarea id="alamat" name="alamat" rows="3" placeholder="Alamat lengkap termasuk RT/RW dan Kode Pos" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="no_hp" class="required">Nomor HP Aktif</label>
+                    <input type="tel" id="no_hp" name="no_hp" placeholder="Nomor yang bisa dihubungi" required>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>DATA ORANG TUA/WALI</h2>
+                
+                <div class="form-group">
+                    <label for="nama_ortu" class="required">Nama Orang Tua/Wali</label>
+                    <input type="text" id="nama_ortu" name="nama_ortu" placeholder="Nama lengkap orang tua/wali" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="no_hp_ortu" class="required">Nomor HP Orang Tua/Wali</label>
+                    <input type="tel" id="no_hp_ortu" name="no_hp_ortu" placeholder="Nomor yang bisa dihubungi" required>
+                </div>
+            </div>
+
+            <button type="button" onclick="sendToWhatsApp()">
+                <i class="fab fa-whatsapp whatsapp-icon"></i> KIRIM VIA WHATSAPP
+            </button>
+        </form>
+    </div>
+
+    <script>
+        function sendToWhatsApp() {
+            // Ambil semua nilai form
+            const nama = document.getElementById('nama').value.trim();
+            const ttl = document.getElementById('ttl').value.trim();
+            const asal_sekolah = document.getElementById('asal_sekolah').value.trim();
+            const alamat = document.getElementById('alamat').value.trim();
+            const no_hp = document.getElementById('no_hp').value.trim();
+            const nama_ortu = document.getElementById('nama_ortu').value.trim();
+            const no_hp_ortu = document.getElementById('no_hp_ortu').value.trim();
+            
+            // Validasi form
+            if (!nama || !ttl || !asal_sekolah || !alamat || !no_hp || !nama_ortu || !no_hp_ortu) {
+                alert('Harap lengkapi semua data yang diperlukan!');
+                return;
+            }
+            
+            // Format pesan WhatsApp
+            const phoneNumber = '6283143893139';
+            const message = `*FORM PENDAFTARAN MPLS MTs DARUTHOLIBIN 2025/2026*
+            
+*DATA PRIBADI:*
+📌 Nama Lengkap: ${nama}
+📌 Tempat & Tanggal Lahir: ${ttl}
+📌 Asal Sekolah: ${asal_sekolah}
+📌 Alamat Rumah: ${alamat}
+📌 Nomor HP Aktif: ${no_hp}
+
+*DATA ORANG TUA/WALI:*
+👨‍👩‍👧 Nama Orang Tua/Wali: ${nama_ortu}
+📱 Nomor HP Orang Tua: ${no_hp_ortu}
+
+_Data ini dikirim melalui formulir MPLS MTs Darutholibin_`;
+            
+            // Encode pesan untuk URL
+            const encodedMessage = encodeURIComponent(message);
+            
+            // Buat link WhatsApp
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+            
+            // Buka WhatsApp
+            window.open(whatsappUrl, '_blank');
+            
+            // Reset form (opsional)
+            document.getElementById('mplsForm').reset();
+        }
+    </script>
+</body>
+</html>
